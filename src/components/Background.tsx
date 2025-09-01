@@ -3,7 +3,7 @@ import rainyVdo from "../assets/rainy.mp4";
 import clearSky from "../assets/clear.mp4";
 import cloudyVdo from "../assets/clouds.mp4";
 import drizzleVdo from "../assets/drizzle.mp4";
-import thunderVdo from "../assets/thunderr.mp4";
+import thunderVdo from "../assets/thunder.mp4";
 import defaultBg from "../assets/wallheaven.png";
 import { useWeather } from "../context/weatherContext";
 
