@@ -6,14 +6,14 @@ import useDebounce from "./useDebounce";
 const useLocationSuggestion = () => {
   const [locations, setLocations] = useState<ILocation[]>([]);
   const [query, setQuery] = useState<string | null>(null);
-  const debouncedQuery = useDebounce(query, 500);
+  const debouncedQuery = useDebounce(query, 300);
 
   useEffect(() => {
     if (!debouncedQuery) return;
     const getLocationSuggestions = async () => {
       try {
         const res = await axios.get(
-          `http://api.openweathermap.org/geo/1.0/direct?q=${debouncedQuery}&limit=8&appid=${
+          `https://api.openweathermap.org/geo/1.0/direct?q=${debouncedQuery}&limit=8&appid=${
             import.meta.env.VITE_API_KEY
           }`
         );

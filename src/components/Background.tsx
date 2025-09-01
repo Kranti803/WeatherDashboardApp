@@ -4,7 +4,7 @@ import clearSky from "../assets/clear.mp4";
 import cloudyVdo from "../assets/clouds.mp4";
 import drizzleVdo from "../assets/drizzle.mp4";
 import thunderVdo from "../assets/thunderr.mp4";
-import defaultBg from "../assets/green.jpg";
+import defaultBg from "../assets/wallheaven.png";
 import { useWeather } from "../context/weatherContext";
 
 const Background = () => {
@@ -29,9 +29,9 @@ const Background = () => {
       case "Thunder":
         setBackground(thunderVdo);
         break;
-         default:
-         setBackground(defaultBg);
-        return
+      default:
+        setBackground(defaultBg);
+        return;
     }
   }, [weatherCondition]);
 
@@ -41,7 +41,9 @@ const Background = () => {
       autoPlay
       loop
       muted
-      className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+      playsInline
+      poster={defaultBg}
+      className="fixed inset-0 w-full h-full object-cover -z-10"
     />
   );
 };
