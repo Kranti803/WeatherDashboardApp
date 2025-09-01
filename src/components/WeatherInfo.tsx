@@ -33,7 +33,7 @@ const WeatherInfo = () => {
     <div className="flex-1 bg-white/30 backdrop-blur-sm rounded-lg p-4 text-white">
       <h4 className="font-bold pb-3 text-lg">Weather Conditions</h4>
 
-      <aside className="grid grid-cols-2 grid-rows-2 gap-4">
+      <aside className="grid grid-cols-1 sm:grid-cols-2  gap-3 sm:gap-4">
         {info?.map((item) => (
           <div
             key={item.label}

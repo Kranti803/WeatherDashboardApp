@@ -14,11 +14,11 @@ const LocationAndTime = () => {
 
   return (
     <>
-      <span className="w-fit border p-2 rounded-4xl bg-white/20 border-white/30 flex items-center gap-x-1">
+      <span className="w-fit border text-sm sm:text-xl p-2 rounded-4xl bg-white/20 border-white/30 flex items-center gap-x-1">
         <MapPin />
         {currentData?.name},{currentData?.sys?.country}
       </span>
-      <span className="w-fit border p-2 rounded-4xl bg-white/20 border-white/30">
+      <span className="w-fit border p-2 rounded-4xl bg-white/20 border-white/30 text-sm sm:text-xl">
         {time}
       </span>
     </>

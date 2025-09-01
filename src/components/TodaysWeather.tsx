@@ -35,7 +35,7 @@ const TodaysWeather = () => {
         </div>
 
         <div className="flex flex-col gap-y-1 items-center justify-between row-span-2 ">
-          <div className="text-6xl font-bold">
+          <div className="text-5xl sm:text-6xl font-bold">
             {Math.round(currentData?.main?.temp!)}
             {tempUnit === "metric" ? "°C" : "°F"}
           </div>
